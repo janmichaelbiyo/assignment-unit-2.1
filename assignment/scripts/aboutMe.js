@@ -69,6 +69,18 @@ if (luckyNumber == 2 && adventurous == true)
 console.log(diceRoll)
 
 // 14 - Create a variable called `petStatus`. 
+
+let petStatus;
+    if (pets < allowedPets)
+        {petStatus = "I can have more pets"}
+    else if (pets == allowedPets)
+        {petStatus = "I have enough pets"}
+    else (pets > allowedPets)
+        {petStatus = "Oh no, I have too many pets!"}
+
+console.log(petStatus)
+
+
 //      Write a conditional that covers the following:
 //      if the value of `pets` is less than the value of `allowedPets`,
 //      set `petStatus` to the value of "I can have more pets" 
@@ -86,6 +98,13 @@ console.log(diceRoll)
 //      be sure to think through all the scenarios. 
 //      console.log `mostPets` after the conditional has run.
 
+let mostPets;
+if (pets > friendsPets) {mostPets = pets}
+else if (pets < friendsPets) {mostPets = friendsPets}
+
+console.log(mostPets)
+
+
 // 16 - Make a variable called `luckyResult`
 //      Write a *switch* statement that sets `luckyResult` to:
 //      "First is the worst" if your lucky number is 1
@@ -95,7 +114,39 @@ console.log(diceRoll)
 //      You'll need to research how to use switch statements!
 //      console.log `luckyResult` after the conditional has run.
 
+let luckyResult;
+switch (luckyNumber) {
+  case 1:
+    luckyResult = "First is the worst"
+    break;
+  case 2:
+    luckyResult = "Second is the best"
+    break;
+  case 3:
+    luckyResult = "Thrid is the one with the polka dot dress"
+    break;
+  default:
+    luckyResult = "Luck is what happens when preparation meets opportuity"
+}
+console.log(luckyResult)
+
+
 // 17 -- Rewrite question 12 with a `ternary` operator. You'll need to do research!
+
+// extra 12 - Create a variable called `result`. Create a conditional:
+//      if adventurous is true, set `result` to be "Adventures are great!", 
+//      if it's not true,  set `result` to be "How about we stay home?"
+
+let adventurous1 = true
+
+let result1;
+
+    result1 = adventurous1 = true ? "Adventures are great!" : "How about we stay home?";
+
+console.log(result1)
+
+
+
 
 
 
